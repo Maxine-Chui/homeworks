@@ -1,0 +1,5 @@
+<% @bands.each do |band| %>
+<%= band.name %>
+  <%= button_to "Band Page", band_url(band), method: :get %>
+  <%= button_to "Delete", band_url(band), method: :delete %>
+<% end %>

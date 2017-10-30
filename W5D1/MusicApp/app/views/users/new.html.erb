@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New User</title>
+  </head>
+  <body>
+  <form class="form" action="<%= users_url %>" method="post">
+    <input type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+    <header>New User Sign Up</header>
+    <p>
+      <label for="new-user-email">Email</label>
+      <input type="text" name="user[email]">
+    </p>
+    <p>
+      <label for="new-user-password">Password</label>
+      <input type="password" name="user[password]">
+    </p>
+    <input type="submit" value="Submit">
+  </body>
+</form>
+</html>
